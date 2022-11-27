@@ -1,0 +1,28 @@
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+$color-primary: #E6B358;
+$color-text: #32312E;
+$color-background: #fdfcf7;
+
+$default-font: 'Raleway',sans-serif;
+$body-text: 16px;
+
+
+body{
+    margin: 0;
+    background-color: $color-background;
+    font-family: $default-font;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 1hr, 4hr;
+    __left{
+        grid-column: 1/2;
+
+    }
+    __inner{
+
+    }
+}

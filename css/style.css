@@ -1,0 +1,21 @@
+html {
+  box-sizing: border-box;
+}
+
+*, ::after, ::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: #fdfcf7;
+  font-family: "Raleway", sans-serif;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1hr, 4hr;
+}
+.header __left {
+  grid-column: 1/2;
+}/*# sourceMappingURL=style.css.map */
