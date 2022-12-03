@@ -131,7 +131,7 @@ body{
 
 
 .hero{
-    background-image: url(../images/vcela-modry-kvet.jpg);
+    background-image: url(/images/vcela-modry-kvet.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     min-width: 200px;
@@ -139,7 +139,7 @@ body{
     background-position: center;
 
     @media screen and (min-width: 800px){
-        background-image: url(../images/vcela-modry-kvet.jpg);
+        background-image: url(/images/vcela-modry-kvet.jpg);
         min-height: 400px;
      
     }
