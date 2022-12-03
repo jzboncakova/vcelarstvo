@@ -25,7 +25,7 @@ body{
     
 
     &__left{
-      flex: 1 1 50%;
+      flex: 0 1 50%;
     }
    
     
@@ -41,7 +41,7 @@ body{
 
     }
     @media screen and (min-width: 800px){
-    width: 1100px;
+    max-width: 1100px;
 	margin: 0 auto;
     align-items: center;
 
@@ -131,23 +131,70 @@ body{
 
 
 .hero{
-    background-image: url(/images/vcela-biely-kvet.jpg);
+    background-image: url(/images/vcela-modry-kvet.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     min-width: 200px;
     min-height: 300px;
     background-position: center;
-  
+
+    @media screen and (min-width: 800px){
+        background-image: url(/images/vcela-modry-kvet.jpg);
+        min-height: 400px;
+     
+    }
 
 }
 .footer{
-   background-color: $color-primary;
+    background-color: $color-primary;
+    padding: 50px;
+    
+    @media screen and ( max-width: 799px){
+    &__grid{
+   
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    }
+    }
+    &__facebook-icon{
+        max-width: 40px;
+        
+    }
+
+    &__menu-list{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    &__menu-link{
+        text-decoration: none;
+        color: $color-text;
+        display: block;
+    }
+    
+
+    @media screen and (min-width: 800px){
+
+    &__grid{
+        max-width: 1100px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        }
+    
+    &__copyright{
+            max-width: 1100px;
+            margin: 0 auto;
+            
+            
+        }
+
+    }
+   }
 
 
-&__grid{
-    width: 1100px;
-    margin: 0 auto;
-    display: grid;
+   
 
-}
-}
+
