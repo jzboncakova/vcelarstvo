@@ -1,0 +1,16 @@
+@use 'colors';
+@use 'text';
+
+
+
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+
+
+body{
+    margin: 0;
+    background-color: colors.$color-background;
+    font-family: text.$default-font;
+    
+}
