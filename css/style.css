@@ -324,6 +324,11 @@ h2 {
   max-width: 1100px;
   margin: 0 auto;
 }
+@media screen and (max-width: 799px) {
+  .glide {
+    display: none;
+  }
+}
 .glide__image {
   max-height: 300px;
 }/*# sourceMappingURL=style.css.map */

@@ -22,9 +22,14 @@
     padding: 30px;
     max-width: 1100px;
     margin: 0 auto;
+    @media screen and (max-width: 799px){
+        display: none;
+    }
+
 
 &__image{
     max-height: 300px;
 }
+
 
 }
