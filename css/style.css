@@ -24,6 +24,11 @@ h2 {
 .prefooter {
   max-height: 200px;
 }
+@media screen and (max-width: 799px) {
+  .prefooter {
+    max-width: 100%;
+  }
+}
 
 .footer {
   background-color: #E6B358;
@@ -153,7 +158,7 @@ h2 {
 }
 
 .hero {
-  background-image: url(../images/vcela-modry-kvet.jpg);
+  background-image: url(/images/vcela-modry-kvet.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   min-width: 200px;
@@ -162,7 +167,7 @@ h2 {
 }
 @media screen and (min-width: 800px) {
   .hero {
-    background-image: url(../images/vcela-modry-kvet.jpg);
+    background-image: url(/images/vcela-modry-kvet.jpg);
     min-height: 400px;
   }
 }
@@ -234,6 +239,26 @@ h2 {
 .tradition {
   padding: 50px;
 }
+.tradition__quote {
+  font-style: italic;
+  font-size: 20px;
+  text-align: center;
+}
+.tradition__quote::after, .tradition__quote::before {
+  content: "";
+  display: block;
+  width: 200px;
+  background-color: #32312E;
+  margin: auto;
+}
+.tradition__quote::after {
+  margin-top: 20px;
+  height: 1.5px;
+}
+.tradition__quote::before {
+  margin-bottom: 20px;
+  height: 2px;
+}
 .tradition__image, .tradition__image1 {
   max-width: 100%;
 }
@@ -291,4 +316,14 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+}
+
+.glide {
+  background-color: lightgray;
+  padding: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.glide__image {
+  max-height: 300px;
 }/*# sourceMappingURL=style.css.map */

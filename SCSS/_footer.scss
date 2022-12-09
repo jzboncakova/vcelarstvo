@@ -7,7 +7,9 @@
 
 .prefooter{
     max-height: 200px;
-    
+    @media screen and ( max-width: 799px){
+        max-width: 100%;
+    }
 }
 
 .footer{

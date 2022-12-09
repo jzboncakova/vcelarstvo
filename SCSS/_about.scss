@@ -16,3 +16,15 @@
     grid-template-columns: 1fr 1fr;
     }
 }
+
+.glide{
+    background-color: lightgray;
+    padding: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+
+&__image{
+    max-height: 300px;
+}
+
+}

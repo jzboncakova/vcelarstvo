@@ -7,6 +7,10 @@ module.exports = function(eleventyConfig) {
    
     // Zkopírovat css/ to _site/css/
     eleventyConfig.addPassthroughCopy("css");
+
+     // Zkopírovat js/ to _site/js/
+     eleventyConfig.addPassthroughCopy("js");
+    
    
     return {
       // možné formáty šablon
