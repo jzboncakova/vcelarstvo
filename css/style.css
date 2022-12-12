@@ -11,6 +11,7 @@ body {
   background-color: #fdfcf7;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
+  line-height: 1.8;
 }
 
 h1 {
@@ -22,7 +23,8 @@ h2 {
 }
 
 .prefooter {
-  max-height: 200px;
+  max-width: 100%;
+  padding-top: 100px;
 }
 @media screen and (max-width: 799px) {
   .prefooter {
@@ -81,13 +83,13 @@ h2 {
   justify-content: space-between;
 }
 .header__left {
-  flex: 0 1 50%;
+  flex: 0 1 40%;
 }
 .header__logo {
   max-width: 200px;
 }
 .header__menu {
-  flex: 1 1 50%;
+  flex: 1 1 60%;
 }
 @media screen and (min-width: 800px) {
   .header {
@@ -133,11 +135,11 @@ h2 {
   }
   .menu__list {
     position: absolute;
-    bottom: -190px;
-    left: 0;
+    bottom: -250px;
+    right: 0;
   }
   .menu__link {
-    padding: 10px 200px;
+    padding: 10px 150px;
   }
 }
 .menu__toggler {
@@ -172,32 +174,24 @@ h2 {
   }
 }
 
+.hero-tradicia {
+  background-image: url(/images/apa-vcely.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 200px;
+  min-height: 300px;
+}
+@media screen and (min-width: 800px) {
+  .hero-tradicia {
+    background-image: url(/images/apa-vcely-hero.jpg);
+    min-height: 400px;
+    background-position: center;
+  }
+}
+
 .products {
   padding: 50px;
-}
-.products__quote {
-  font-style: italic;
-  font-size: 20px;
-  text-align: center;
-}
-.products__quote::after, .products__quote::before {
-  content: "";
-  display: block;
-  width: 200px;
-  background-color: #32312E;
-  margin: auto;
-}
-.products__quote::after {
-  margin-top: 20px;
-  height: 1.5px;
-}
-.products__quote::before {
-  margin-bottom: 20px;
-  height: 2px;
-}
-.products__caption {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 0;
 }
 @media screen and (min-width: 800px) {
   .products {
@@ -239,26 +233,6 @@ h2 {
 .tradition {
   padding: 50px;
 }
-.tradition__quote {
-  font-style: italic;
-  font-size: 20px;
-  text-align: center;
-}
-.tradition__quote::after, .tradition__quote::before {
-  content: "";
-  display: block;
-  width: 200px;
-  background-color: #32312E;
-  margin: auto;
-}
-.tradition__quote::after {
-  margin-top: 20px;
-  height: 1.5px;
-}
-.tradition__quote::before {
-  margin-bottom: 20px;
-  height: 2px;
-}
 .tradition__image, .tradition__image1 {
   max-width: 100%;
 }
@@ -284,51 +258,84 @@ h2 {
   .tradition__image1 {
     max-width: 50%;
   }
-  .tradition__quote {
-    font-style: italic;
-    font-size: 20px;
-    text-align: center;
-  }
-  .tradition__quote::after, .tradition__quote::before {
-    content: "";
-    display: block;
-    width: 200px;
-    background-color: #32312E;
-    margin: auto;
-  }
-  .tradition__quote::after {
-    margin-top: 20px;
-    height: 1.5px;
-  }
-  .tradition__quote::before {
-    margin-bottom: 20px;
-    height: 2px;
-  }
 }
 
 .about {
   padding: 50px;
+}
+.about__image {
+  width: 80%;
 }
 @media screen and (min-width: 800px) {
   .about {
     max-width: 1100px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
+    gap: 70px 30px;
+    align-items: center;
+    justify-items: center;
   }
 }
 
 .glide {
-  background-color: lightgray;
-  padding: 30px;
-  max-width: 1100px;
-  margin: 0 auto;
+  background-color: #E6B358;
+  padding: 30px 100px;
+  margin: 50px 0;
+  width: 100%;
+  text-align: center;
+  box-shadow: 1px 1px 5px rgb(211, 211, 211);
 }
 @media screen and (max-width: 799px) {
   .glide {
     display: none;
   }
 }
+.glide__track {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.glide__icon {
+  width: 30px;
+}
 .glide__image {
   max-height: 300px;
+  padding: 10px;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 20px;
+  text-align: center;
+  max-width: 1100px;
+  margin: 80px auto;
+}
+
+.quote::after,
+.quote::before {
+  content: "";
+  display: block;
+  width: 200px;
+  background-color: #32312E;
+  margin: auto;
+}
+
+.quote::after {
+  margin-top: 20px;
+  height: 1.5px;
+}
+
+.quote::before {
+  margin-bottom: 20px;
+  height: 1.5px;
+}
+
+.contact {
+  padding: 50px;
+}
+@media screen and (min-width: 800px) {
+  .contact {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=style.css.map */

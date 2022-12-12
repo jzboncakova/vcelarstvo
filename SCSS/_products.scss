@@ -3,34 +3,11 @@
 
 .products{
     padding: 50px;
-&__quote{
-    font-style: italic;
-    font-size: 20px;
-    text-align: center;
-}
+    padding-top: 0;
 
-&__quote::after,
-&__quote::before{
-    content: "";
-    display: block;
-    width: 200px;
-    
-    background-color: colors.$color-text;
-    margin: auto;
-    
-} 
-&__quote::after{
-    margin-top: 20px;
-    height: 1.5px;
-}
-&__quote::before{
-    margin-bottom: 20px;
-    height: 2px;
-}
 
 &__caption{
-    padding-top: 20px;
-    padding-bottom: 20px;
+    
 }
 
 
