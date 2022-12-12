@@ -26,9 +26,21 @@ h2 {
   font-weight: 400;
 }
 
+h3 {
+  font-size: 20px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: #32312E;
+}
+
 .prefooter {
   max-width: 100%;
   padding-top: 100px;
+  border-bottom: 1.5px solid #E6B358;
 }
 @media screen and (max-width: 799px) {
   .prefooter {
@@ -46,9 +58,6 @@ h2 {
     display: flex;
     flex-direction: column;
   }
-}
-.footer__facebook-icon {
-  max-width: 40px;
 }
 .footer__grid-column:last-child {
   padding-top: 20px;
@@ -350,12 +359,33 @@ h2 {
   height: 1.5px;
 }
 
+.hero-contact {
+  border-top: 1.5px solid #E6B358;
+}
+.hero-contact__image {
+  max-width: 100%;
+}
+
 .contact {
   padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.contact__image {
+  max-width: 100%;
+}
+.contact__phone {
+  grid-column: 1/span 2;
 }
 @media screen and (min-width: 800px) {
   .contact {
-    max-width: 1100px;
+    max-width: 800px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact__image {
+    max-width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

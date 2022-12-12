@@ -1,12 +1,37 @@
 @use 'colors';
 @use 'text';
 
+.hero-contact{
+    border-top: 1.5px solid colors.$color-primary;
+&__image{
+
+        max-width: 100%;
+}
+}
 .contact{
     padding: 50px;
+    &__image{
+        max-width: 100%;
+    }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+   
+
+    &__phone{
+        grid-column: 1 / span 2;
+
+    }
 
 
     @media screen and (min-width: 800px){
-    max-width: 1100px;
+    max-width: 800px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    &__image{
+        max-width: 100%;
+    }
     }
 }

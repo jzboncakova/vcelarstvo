@@ -11,6 +11,7 @@
     @media screen and ( max-width: 799px){
         max-width: 100%;
     }
+    border-bottom: 1.5px solid colors.$color-primary;
 }
 
 .footer{
@@ -25,10 +26,7 @@
     }
     }
 
-    &__facebook-icon{
-        max-width: 40px;
-        
-    }
+   
     &__grid-column:last-child{
         padding-top: 20px;
     }
