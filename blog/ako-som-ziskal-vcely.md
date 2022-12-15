@@ -1,7 +1,7 @@
 ---
 layout: blog-sablona.njk
 title: Ako som získal včely, vzápätí o ne prišiel a ako ma dedo ani z večných lovíšť nenechal v štichu.
-date: 2022-12-13
+day: 13.12.2022
 perex: Rok 2013 bol ten, kedy som sa stal skutočným včelárom. Neplánovane. Vedel som, že raz sa na to dám, ale takto skoro určite nie. Mal som svojich milión aktivít a včely do toho akosi nezapadali. No ale dedko sa rozhodol inak a na jar roku 2013 odišiel. Navždy. Mne neostávalo nič iné, len sa včiel zbaviť alebo to s nimi skúsiť. Vybral som si to druhé.
 foto: dedove-vcely.jpg
 alt: Dedove všely

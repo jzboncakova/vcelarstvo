@@ -46,3 +46,18 @@
         background-position: center;
     }
 }
+
+.hero-produkty{
+    background-image: url(/images/produkty-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 200px;
+    min-height: 300px;
+   
+
+    @media screen and (min-width: 800px){
+        min-height: 400px;
+        background-position: center;
+    }
+
+}
