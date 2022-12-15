@@ -189,6 +189,14 @@ a {
     border-bottom: 0;
     padding-left: 20px;
   }
+  .menu__link:hover {
+    background-color: #fdfcf7;
+    border-bottom: 3px solid #E6B358;
+  }
+  .menu__item--active .menu__link {
+    background-color: #fdfcf7;
+    border-bottom: 3px solid #E6B358;
+  }
 }
 
 .hero {
@@ -394,6 +402,9 @@ a {
   height: 1.5px;
 }
 
+.article__link {
+  color: #e69f27;
+}
 @media screen and (max-width: 799px) {
   .article__image {
     display: none;
@@ -457,6 +468,8 @@ a {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
+  justify-content: center;
+  gap: 30px;
 }
 .contact__image {
   max-width: 100%;
@@ -470,6 +483,11 @@ a {
   .contact__phone {
     grid-column: 1/span 2;
   }
+}
+
+.contact h3,
+.contact h2 {
+  margin-top: 0;
 }
 
 .blog {

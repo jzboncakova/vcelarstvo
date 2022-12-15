@@ -16,6 +16,8 @@
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
+    justify-content: center;
+    gap: 30px;
    
 
    
@@ -35,3 +37,10 @@
     
     }
 }
+
+.contact h3,
+.contact h2{
+    margin-top: 0;
+}
+
+

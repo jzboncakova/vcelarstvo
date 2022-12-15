@@ -127,7 +127,13 @@
        
         
     }
-
+    &__link:hover{
+        background-color: colors.$color-background;
+        border-bottom: 3px solid colors.$color-primary;
     }
-
+    &__item--active .menu__link{
+        background-color: colors.$color-background;
+        border-bottom: 3px solid colors.$color-primary;
+    }
+    }
 }

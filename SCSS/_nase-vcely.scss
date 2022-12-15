@@ -32,6 +32,9 @@
 
 .article{
 
+    &__link{
+        color: colors.$color-hover;
+    }
     
 @media screen and (max-width: 799px){
 &__image{

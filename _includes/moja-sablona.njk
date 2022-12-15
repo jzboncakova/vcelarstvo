@@ -47,11 +47,21 @@
 					<label for="menu-checkbox" class="menu__toggler"><img class= "menu__icon" src="/images/menu.png" alt="menu-icon" width="50px"></label>
 
 					<ul class="menu__list">
-						<li class="menu__item"><a href="/" class="menu__link">Úvod</a></li>
-						<li class="menu__item"><a href="/tradicia/" class="menu__link">Tradícia</a></li>
-						<li class="menu__item"><a href="/produkty/" class="menu__link">Produkty</a></li>
-						<li class="menu__item"><a href="/nase-vcely/" class="menu__link">Naše Včely</a></li>
-						<li class="menu__item"><a href="/kontakt/" class="menu__link">Kontakt</a></li>
+						<li class="menu__item {{ 'menu__item--active' if page.fileSlug === '' }}">
+							<a href="/" class="menu__link">Úvod</a>
+						</li>
+						<li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'tradicia' }}">
+							<a href="/tradicia/" class="menu__link">Tradícia</a>
+						</li>
+						<li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'produkty' }}">
+							<a href="/produkty/" class="menu__link">Produkty</a>
+						</li>
+						<li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'nase-vcely' }}">
+							<a href="/nase-vcely/" class="menu__link">Naše Včely</a>
+						</li>
+						<li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'kontakt' }}">
+							<a href="/kontakt/" class="menu__link">Kontakt</a>
+						</li>
 					</ul>
 				</nav>	
 			</div>
