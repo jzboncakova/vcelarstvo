@@ -42,10 +42,13 @@
 }
 &__icon{
     width: 30px;
+    
 }
 &__image{
-    max-height: 300px;
-    padding: 10px;
+    max-width: 90%;
+}
+&__slide{
+    max-width: 100%;
 }
 
 

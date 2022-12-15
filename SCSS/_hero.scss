@@ -31,3 +31,18 @@
         background-position: center;
     }
 }
+
+.hero-about{
+    background-image: url(/images/ule-zima-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 200px;
+    min-height: 300px;
+   
+
+    @media screen and (min-width: 800px){
+        background-image: url(/images/ule-zima-hero.jpg);
+        min-height: 400px;
+        background-position: center;
+    }
+}

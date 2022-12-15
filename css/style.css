@@ -40,7 +40,6 @@ a {
 .prefooter {
   max-width: 100%;
   padding-top: 100px;
-  border-bottom: 1.5px solid #E6B358;
 }
 @media screen and (max-width: 799px) {
   .prefooter {
@@ -217,6 +216,21 @@ a {
   }
 }
 
+.hero-about {
+  background-image: url(/images/ule-zima-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 200px;
+  min-height: 300px;
+}
+@media screen and (min-width: 800px) {
+  .hero-about {
+    background-image: url(/images/ule-zima-hero.jpg);
+    min-height: 400px;
+    background-position: center;
+  }
+}
+
 .products {
   padding: 50px;
   padding-top: 0;
@@ -327,8 +341,10 @@ a {
   width: 30px;
 }
 .glide__image {
-  max-height: 300px;
-  padding: 10px;
+  max-width: 90%;
+}
+.glide__slide {
+  max-width: 100%;
 }
 
 .quote {
@@ -360,7 +376,7 @@ a {
 }
 
 .hero-contact {
-  border-top: 1.5px solid #E6B358;
+  border-top: 2px solid #E6B358;
 }
 .hero-contact__image {
   max-width: 100%;
@@ -369,23 +385,19 @@ a {
 .contact {
   padding: 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   align-items: center;
 }
 .contact__image {
   max-width: 100%;
 }
-.contact__phone {
-  grid-column: 1/span 2;
-}
 @media screen and (min-width: 800px) {
   .contact {
     max-width: 800px;
     margin: 0 auto;
-    display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .contact__image {
-    max-width: 100%;
+  .contact__phone {
+    grid-column: 1/span 2;
   }
 }/*# sourceMappingURL=style.css.map */
