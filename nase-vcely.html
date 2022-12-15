@@ -6,3 +6,26 @@ title: Naše Včely
 <section class="hero">
 
 </section>
+
+<section class="content">
+
+{% for prispevok in collections.blog %}
+
+<div class="article">
+
+
+    
+    <img class="article__image" src="/images/{{prispevok.data.foto}}" alt="{{prispevok.data.alt}}">
+    <div class="article__text">
+        <h2>{{ prispevok.data.title }}</h2>
+        <p>{{ prispevok.data.perex }}</p>
+        <p><a href="{{ prispevok.url }}"> celý článok </a></p>
+    </div>
+    
+
+   
+    
+</div>
+{% endfor %}
+
+</section>
